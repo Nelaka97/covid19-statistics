@@ -1,3 +1,10 @@
+/* App.css */
+
+/* Include Bootstrap styles */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* Your existing CSS styles here */
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Add styles for react-paginate */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 6px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.pagination li.active {
+  background-color: #61dafb;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination li:hover {
+  background-color: #61dafb;
+  color: white;
 }
